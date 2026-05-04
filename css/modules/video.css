@@ -1,0 +1,16 @@
+.video-container {
+    display: flex;
+    justify-content: center;
+    /* Centra el video horizontalmente */
+    padding: 20px;
+    background-color: #1a1a1a;
+    /* Le da un fondo oscuro para que resalte como en el cine */
+}
+
+iframe {
+    border: 3px solid #f1c40f;
+    /* Un borde dorado para combinar con el resto */
+    border-radius: 10px;
+    max-width: 100%;
+    /* Para que no se rompa en celulares */
+}

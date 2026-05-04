@@ -1,0 +1,45 @@
+/* MÓDULO GLOBAL - Configuración Base */
+
+/* Importamos la fuente de Google aquí para que afecte a todo */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Esto asegura que el padding no afecte el ancho total */
+}
+
+body {
+    background-color: #f0e6d2;
+    /* Color crema tipo mapa pirata */
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Estilos para enlaces generales */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Ajustes para tablets y celulares */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        /* El logo arriba y el menú abajo */
+        gap: 15px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        /* Menú en vertical para móviles */
+        align-items: center;
+        gap: 10px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}

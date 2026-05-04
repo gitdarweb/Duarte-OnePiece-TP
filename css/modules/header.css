@@ -1,0 +1,43 @@
+/* Módulo de Encabezado */
+header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    /* Para que te siga al hacer scroll */
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Pirata One', cursive;
+    font-size: 2.5rem;
+    color: #f1c40f;
+    /* Dorado pirata */
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-list a {
+    color: white;
+    /* Aquí arreglamos lo que se veía gris */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #f1c40f;
+    /* Efecto al pasar el mouse */
+}

@@ -1,0 +1,38 @@
+/* Módulo de Reseñas con CSS Grid */
+.reviews-section {
+    padding: 50px 20px;
+    background-color: #eaddca;
+    /* Un tono un poco más oscuro que el crema global */
+}
+
+.reviews-container {
+    display: grid;
+    /* Creamos 2 columnas que ocupan el mismo espacio */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.review-card {
+    background-color: #fff;
+    padding: 20px;
+    border-left: 5px solid #f1c40f;
+    /* Detalle en dorado */
+    border-radius: 8px;
+    font-style: italic;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.review-card h4 {
+    margin-top: 10px;
+    color: #1a1a1a;
+    font-style: normal;
+}
+
+/* Para que en celulares se vea una sola columna */
+@media (max-width: 768px) {
+    .reviews-container {
+        grid-template-columns: 1fr;
+    }
+}

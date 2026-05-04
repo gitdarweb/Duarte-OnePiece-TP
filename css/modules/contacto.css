@@ -1,0 +1,81 @@
+/* Módulo de Contacto - Diseño Centrado y Responsivo */
+
+.contacto-main {
+    max-width: 600px;
+    /* Limitamos el ancho para que no se estire de más */
+    margin: 50px auto;
+    /* Centra el contenedor y da espacio arriba/abajo */
+    padding: 20px;
+    background-color: #fff;
+    /* Fondo blanco para el formulario */
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border: 2px solid #f1c40f;
+    /* Borde dorado */
+}
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    /* Apila los elementos uno abajo del otro */
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #1a1a1a;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* Efecto cuando el usuario hace clic en un campo */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #f1c40f;
+    box-shadow: 0 0 5px rgba(241, 196, 15, 0.5);
+}
+
+.btn-submit {
+    background-color: #1a1a1a;
+    color: #f1c40f;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-family: 'Pirata One', cursive;
+    letter-spacing: 1px;
+}
+
+.btn-submit:hover {
+    background-color: #333;
+    transform: scale(1.02);
+    /* Se agranda un poquito al pasar el mouse */
+}
+
+/* Requisito 4: Media Query para que en celulares ocupe más ancho */
+@media (max-width: 600px) {
+    .contacto-main {
+        margin: 20px;
+        width: auto;
+    }
+}

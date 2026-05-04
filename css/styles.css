@@ -1,0 +1,17 @@
+/* ARCHIVO CENTRAL: La jerarquía importa */
+
+/* 1. Global siempre va primero (define el body y el reset) */
+@import url('modules/global.css');
+
+/* 2. Componentes estructurales (lo que está arriba en la web) */
+@import url('modules/header.css');
+
+/* 3. Componentes de contenido (el "relleno" de la página) */
+@import url('modules/productos.css');
+@import url('modules/resenas.css');
+
+/* 4. Páginas específicas o módulos finales */
+@import url('modules/contacto.css');
+
+/* 5. Módulos especiales (como el video) */
+@import url('modules/video.css');

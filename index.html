@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Line Collectibles | One Piece Shop</title>
+
+    <!-- Vinculación al CSS Central (que a su vez importa los módulos) -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Google Fonts: Pirata One para títulos y Roboto para texto -->
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- REQUISITO 1: Header y Nav -->
+    <header>
+        <div class="header-container">
+            <h1>Grand Line Collectibles</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#resenas">Reseñas</a></li>
+                    <li><a href="pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- REQUISITO 1: Main y Sections -->
+    <main>
+
+        <!-- Sección Hero (Presentación) -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h2>¡Bienvenidos, Nakamas!</h2>
+                <p>Encuentra los tesoros más valiosos del Grand Line en un solo lugar.</p>
+            </div>
+        </section>
+
+        <!-- REQUISITO 4: Sección Productos (Usaremos Flexbox) -->
+        <section id="productos" class="products-section">
+            <h2 class="section-title">Nuestros Artículos</h2>
+            <div class="products-container">
+                <!-- Producto 1 -->
+                <article class="product-card">
+                    <img src="img/luffi.webp" alt="Figura Luffy Gear 5">
+                    <h3>Figura Luffy Gear 5</h3>
+                    <p>Estatua de colección de alta calidad.</p>
+                    <span class="price">$25.000</span>
+                    <button class="btn-add">Agregar al carrito</button>
+                </article>
+            
+                <!-- Producto 2 -->
+                <article class="product-card">
+                    <img src="img/sombrero.jpg" alt="Sombrero de Paja">
+                    <h3>Sombrero de Paja</h3>
+                    <p>El legendario sombrero de Shanks.</p>
+                    <span class="price">$8.500</span>
+                    <button class="btn-add">Agregar al carrito</button>
+                </article>
+            
+                <!-- Producto 3 -->
+                <article class="product-card">
+                    <img src="img/fruta.jpg" alt="Gomu Gomu no Mi">
+                    <h3>Fruta del Diablo</h3>
+                    <p>Réplica escala 1:1 de la fruta Gomu Gomu.</p>
+                    <span class="price">$15.000</span>
+                    <button class="btn-add">Agregar al carrito</button>
+                </article>
+            
+                <!-- Producto 4 -->
+                <article class="product-card">
+                    <img src="img/posters.jpg" alt="Wanted Posters">
+                    <h3>Set Wanted Posters</h3>
+                    <p>Pack de 10 pósteres de la peor generación.</p>
+                    <span class="price">$5.000</span>
+                    <button class="btn-add">Agregar al carrito</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- REQUISITO 5: Sección Multimedia -->
+        <section id="multimedia" class="video-section">
+            <h2 class="section-title">Tráiler Oficial</h2>
+            <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/AYhIPAs8JTU" title="YouTube video player" width="560" height="315"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            </div>
+        </section>
+
+        <!-- REQUISITO 4: Sección Reseñas (Usaremos Grid) -->
+        <section id="resenas" class="reviews-section">
+            <h2 class="section-title">Voces del Mar (Reseñas)</h2>
+            <div class="reviews-container">
+                <!-- Aquí aplicaremos la lógica de Grid -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- REQUISITO 1: Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Duarte Team - Proyecto One Piece. Todos los derechos reservados.</p>
+            <p>Desarrollado por Dario Duarte - Estudiante de Informática UNLP</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
