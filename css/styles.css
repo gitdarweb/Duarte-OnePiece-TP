@@ -15,3 +15,6 @@
 
 /* 5. Módulos especiales (como el video) */
 @import url('modules/video.css');
+
+/* 6. Footer siempre al final */
+@import url('modules/footer.css');

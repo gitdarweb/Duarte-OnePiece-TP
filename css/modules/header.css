@@ -1,10 +1,10 @@
-/* Módulo de Encabezado */
+/* Módulo de Encabezado con Logo */
 header {
     background-color: #1a1a1a;
     color: white;
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
+    /* Bajamos un poco el padding vertical para que no sea tan alto */
     position: sticky;
-    /* Para que te siga al hacer scroll */
     top: 0;
     z-index: 1000;
 }
@@ -17,13 +17,39 @@ header {
     margin: 0 auto;
 }
 
-h1 {
-    font-family: 'Pirata One', cursive;
-    font-size: 2.5rem;
-    color: #f1c40f;
-    /* Dorado pirata */
+/* Contenedor del Logo + Título */
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* Espacio entre la imagen y el texto */
+    text-decoration: none;
+    /* Quita el subrayado si lo envolvemos en un link */
 }
 
+.logo-img {
+    width: 50px;
+    /* Tamaño ideal para que no rompa el diseño */
+    height: 50px;
+    object-fit: contain;
+    /* Asegura que no se deforme el logo */
+    transition: transform 0.3s;
+}
+
+.logo-box:hover .logo-img {
+    transform: rotate(10deg) scale(1.1);
+    /* Efecto divertido al pasar el mouse */
+}
+
+h1 {
+    font-family: 'Pirata One', cursive;
+    font-size: 2.2rem;
+    /* Lo bajamos un poquito para que entre bien con el logo */
+    color: #f1c40f;
+    margin: 0;
+}
+
+/* Navegación */
 .nav-list {
     display: flex;
     list-style: none;
@@ -32,12 +58,19 @@ h1 {
 
 .nav-list a {
     color: white;
-    /* Aquí arreglamos lo que se veía gris */
     font-weight: bold;
+    text-decoration: none;
     transition: color 0.3s;
 }
 
 .nav-list a:hover {
     color: #f1c40f;
-    /* Efecto al pasar el mouse */
+}
+
+/* Ajuste móvil */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
